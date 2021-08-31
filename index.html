@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thegoatug</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/re.css">
+   
+    <link rel="shortcut icon" type="image/x-icon" href="profile.png" />
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+</head>
+<body>
+    
+<!-------------------------------this is the nav----------------------------------->  
+<div class="navbar">
+  <div class="navspace1"><span class="ti"><b>Thegoatug</b></span></div>
+  <div class="navspace2"><div class="profile" id="mySizeChart"><b>A</b></div></div>
+</div>
+
+<!-------------------------------this is the pop up--------------------->
+<!--popup1-->
+<div id="mySizeChartModal" class="ebcf_modal">
+
+  <div class="ebcf_modal-content">
+    <span class="ebcf_close">&times;</span>
+    <p>Twitter clone not so the same like twitter but like it... This is mainly to show you how to send and retrive data. using firebase <b><a href="https://twitter.com/rolandbbosa">Follow me on Twitter</a></b></p>
+  </div>
+
+</div>
+
+<!---------------------------------This is the main------------------------------->
+<div class="main">
+<div class="space"></div>
+    
+  <div class="row">
+
+    <!-------------------------------------------post----------------------------------->
+    <div class="column">
+      <div class="card">
+
+        <form id="message-form">
+        <textarea  id="message-input" type="text" class="limited" placeholder="What's on your mind?" required maxlength="280" size="280" id='messageInput'  ></textarea>
+        <p><div class="one"><button>Post</button></div></p>
+        </form>
+        
+
+      </div>
+    </div>
+
+  <p>
+    <!--------------------------------content---------------------------------------------->
+    <div class="column">
+      <div class="card">
+
+        <div id="container">
+
+          <div id="messages"></div>
+
+        </div>
+  
+
+      </div>
+
+    </div>
+    
+   
+
+ </div>
+</p>
+
+
+
+ <script src="js/re.js"></script>
+ <SCript>
+   // Get the modal
+    var ebModal = document.getElementById('mySizeChartModal');
+
+    // Get the button that opens the modal
+    var ebBtn = document.getElementById("mySizeChart");
+
+    // Get the <span> element that closes the modal
+    var ebSpan = document.getElementsByClassName("ebcf_close")[0];
+
+    // When the user clicks the button, open the modal 
+    ebBtn.onclick = function() {
+        ebModal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    ebSpan.onclick = function() {
+        ebModal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == ebModal) {
+            ebModal.style.display = "none";
+        }
+    }
+ </SCript>
+ 
+</body>
+</html>

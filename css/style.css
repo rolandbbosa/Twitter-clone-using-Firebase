@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+
+body {
+    margin:0;
+    background-color: rgb(231, 236, 239);
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+}
+
+img {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+/* It works only for Google Chrome */
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  box-shadow: 1px 0 2px rgb(46, 44, 44);
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(73, 69, 69);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  
+}
+
+.navspace1 {
+    padding: 7px;
+    width: 150px;
+    float: left;
+}
+
+.ti {
+  font-family: 'Raleway';
+    float: right;
+    font-size: 18px;
+    color: rgb(65, 62, 62);
+    cursor: pointer;
+}
+
+.navspace2 {
+    padding: 5px;
+    width: 100px;
+    float: right;
+}
+
+.profile {
+    font-family: 'Inconsolata';
+  background-color: rgb(187, 219, 230);
+  padding: 10px;
+  width: 20px;
+  float: left;
+  height: 20px;
+  color: dodgerblue;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 100%;
+  cursor: pointer;
+
+}
+
+/*this is the pop up*/
+/* The Modal (background) */
+.ebcf_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.ebcf_modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.ebcf_close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.ebcf_close:hover,
+.ebcf_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
